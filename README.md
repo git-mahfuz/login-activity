@@ -46,5 +46,8 @@ To view login activities visit this URL ```http://localhost:8000/login-activity`
 
 *** Please note that ```url('login-activity')``` is protected by ```auth``` middleware. So, only logged in user can able to browse this route path.
 
+##### Sample View:
+![Alt text](sample-view.png?raw=true "Login Activities")
+
 
 ##### Happy Coding! #####
