@@ -1,0 +1,19 @@
+{
+    "name": "mahfuz/login-activity",
+    "description": "This package will save login and logout activity of user",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahfuz",
+            "email": "mahfuzcse12@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Mahfuz\\LoginActivity\\": "src/"
+        }
+    }
+}
