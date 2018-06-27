@@ -13,11 +13,23 @@ class LoginActivityServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/views', 'login-activity');
 
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+
+        $this->publishes([
+            __DIR__.'/views' => resource_path('views/vendor/login-activity'),
+        ]);
+
+        $this->publishes([
+            __DIR__.'/config/login-activity.php' => config_path('login-activity.php')
+        ], 'config');
+
+        $this->publishes([
+            __DIR__.'/database/migrations' => database_path('migrations')
+        ], 'migrations');
     }
 
     public function register()
     {
-
+        $this->mergeConfigFrom(__DIR__.'/config/login-activity.php', 'login-activity');
     }
 
 }
